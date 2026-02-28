@@ -1,0 +1,39 @@
+*{
+    background-color:aqua;
+}
+
+
+.months{
+    color:green;
+}
+
+#hr1{
+    color:rgb(208, 211, 36);
+}
+
+<!--
+    *{
+        background-color:aqua;
+    }
+    
+    
+    .months{
+        color:green;
+    }
+    
+    #hr1{
+        color:rgb(208, 211, 36);
+    }
+
+    #img1{
+        color: rgba(255, 0, 0, 0.5);
+    }
+
+    .days{
+
+        color: blue;
+    }
+
+    #sunday{
+        color: hsl(300, 7%, 3%);
+    }
