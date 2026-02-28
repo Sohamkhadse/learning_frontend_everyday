@@ -11,7 +11,8 @@
     color:rgb(208, 211, 36);
 }
 
-<!--
+#img1{
+    color: rgba(255, 0, 0, 0.5);
     *{
         background-color:aqua;
     }
@@ -36,4 +37,12 @@
 
     #sunday{
         color: hsl(300, 7%, 3%);
+    }
+
+
+    #number3{
+        color: oklab(41.604% 0.12257 -0.07725 / 0.5);
+    }
+    .number2{
+        color: oklab(46.514% -0.02499 -0.21974 / 0.958);
     }
