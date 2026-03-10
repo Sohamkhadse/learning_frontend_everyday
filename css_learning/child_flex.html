@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,4 +66,73 @@
     </div>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monday.com</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .no-1{
+            height:350px;
+            width:400px;
+            background-color:rgb(249, 249, 9);
+            border:2px solid black;
+            margin:auto;
+            display:flex;
+            gap: 5px;
+            justify-content: center;
+            /* align-items: center; */
+            /* flex-wrap:wrap; */
+        }
+
+        .x1{
+            height:100px;
+            width:100px;
+            background-color:blue;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .y1{
+
+            order: 3;
+            flex-grow:1;
+            flex-basis:200px;
+
+        }
+
+        .y2{
+            flex-shrink:0;
+        }
+
+
+        /* background-shorthand */
+        .y3{
+            flex:1 0 190px ;
+            order:2;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="no-1">
+        <div class="x1 y1">h1</div>
+        <div class="x1 y2">h2</div>
+        <div class="x1 y3">h3</div>
+      <div class="x1 y4">h4</div>
+        <div class="x1 y5">h5</div>
+        <div class="x1 y6">h6</div>
+    </div>
+    
+</body>
+>>>>>>> 84d7123fac68dc033a714fc7853f84dcc061d0db
 </html>
