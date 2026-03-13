@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fryday.com</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .x1{
+            position: absolute;
+            top:100px;
+            left: 100px;
+            height:200px;
+            width: 200px;
+             background-color: rgb(207, 24, 24);
+             z-index: 2;
+        }
+        .x2{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            height:200px;
+            width: 200px;
+            background-color: rgb(15, 236, 15);
+            z-index: 1;
+        }
+        .x3{
+            position: static;
+            top: 100px;
+            left: 50px;
+            height:500px;
+            width: 500px;
+            background-color: rgb(19, 166, 229);
+            z-index: 5;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="x1">number 1</div>
+        <div class="x2">number 2</div>
+        <div class="x3">number 3</div>
+    </div>
+</body>
+</html>
