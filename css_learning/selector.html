@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        div div h1{
+            color:blueviolet;
+        }
+        div>h1>div{
+            color: bisque;
+        }
+        div>h1:hover{
+            color: brown;
+        }
+        li:first-child{
+            color: green;
+            font-size: 50px;
+        }
+        li:last-child{
+            color:red;
+        }
+        li:nth-child(2){
+            color:orange;
+        }
+        ul > h1 + h1 {
+            color:chartreuse;
+        }
+          ul > h1 ~ h4{
+            color:chartreuse;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>hello! there.</h1>
+        </div>
+    </div>
+
+    <div>
+        <h1>yes,sir
+            <div>what's up</div>
+        </h1>
+    </div>
+
+    <ul>
+        <li>number 1</li>
+        <li>number 2</li>
+        <li>number 3</li>
+        <li>number 4</li>
+    </ul>
+
+     <ul>
+        <li>number 1</li>
+        <li>number 2</li>
+    </ul>
+     <ul>
+        <li>number 1</li>
+        <li>number 2</li>
+        <li>number 3</li>
+    </ul>
+
+    <div><ul>
+        <h1>youtube</h1>
+        <h1>instagram</h1>
+        <h1>chatgpt</h1>
+    </div></ul>
+
+        <div><ul>
+        <h1>youtube</h1>
+        <h2>instagram</h2>
+        <h3>chatgpt</h3>
+        <h4>chatgpt</h4>
+        <h5>chatgpt</h5>
+    </div></ul>
+
+    
+</body>
+</html>

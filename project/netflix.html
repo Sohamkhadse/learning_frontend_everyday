@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .background-image {
+        height: 100%;
+        width: 98.8vw;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bc-img.png");
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    img{
+        width: 170px;
+        height: 50px;
+        position: relative;
+        left: 500px;
+    }
+    .form-select {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+        right: 500px;
+    }
+    .sign-in {
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: #e50914;
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+         right: 460px;
+    }
+
+    .content{
+        height: 1010px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    h1{
+        color: #fff;
+        font-size: 70px;
+        font-weight: bold;
+        position:relative;
+        left:400px;
+        top:-200px;
+        /* display: inline-block; */
+    }
+    span{
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+         justify-content: center;
+         align-items: center;
+        flex-wrap: nowrap;
+         margin-top: 20px;
+         font-weight: bold;
+         position: relative;
+         top:-100px;
+         right:400px;
+        /* display: inline-block; */
+    }
+    .email-input{
+        padding: 10px;
+        border-radius: 5px;
+        border: white solid 1px;
+        width: 500px;
+        height:80px;
+        font-size: 16px;
+        position: relative;
+         right: 700px;
+         /* top:100px; */
+         background-color: #333;
+         color: #fff;
+    }
+    .get-started{
+        height: 100px;
+        width:300px;
+        background-color: #e50914;
+        position: relative;
+        /* top:200px; */
+        right:700px;
+
+
+    }
+
+</style>
+
+<body>
+
+<div class="background-image">
+    <div class="header">
+        <div class="logo-container">
+            <img src="./image.png" alt="netflix logo" class="logo">
+
+            <div class="head">
+                <select class="form-select" name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="telugu">Telugu</option>
+                </select>
+                <button class="sign-in">Sign in</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <h1>Unlimited movies, shows, and more</h1>
+        <span>Starts at ₹149. Cancel at any time.</span>
+        <input type="text" placeholder="Email address" class="email-input">
+        <button class="get-started">Get Started</button>
+
+    </div>
+
+</div>
+</body>
+
+</html>

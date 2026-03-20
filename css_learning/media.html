@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        .media{
+            height: 500px;
+            width:500px;
+            background-color: chocolate;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr ;
+        }
+        @media screen and (max-width : 576px){
+            .media{
+           
+            background-color: chocolate;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows:  1fr 1fr 1fr 1fr 1fr ;
+            }
+        }
+             @media screen and (min-width : 576px) and (max-width : 990px){
+            .media{
+           
+            background-color: chocolate;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows:  1fr 1fr 1fr ;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="media">
+        <div>day 1</div>
+        <div>day 2</div>
+        <div>day 3</div>
+        <div>day 4</div>
+        <div>day 5</div>
+        <div>day 6</div>
+        <div>day 7</div>
+        <div>day 8</div>
+        <div>day 9</div>
+    </div>
+    
+</body>
+</html>

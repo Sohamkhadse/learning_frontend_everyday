@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .one {
+            height: 100vh;
+            width: 50vw;
+            background-color: black;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .friend {
+            position: absolute;
+            top: 63%;
+            left: 24%;
+            transform: translate(-50%, -50%);
+        }
+
+        .spelling {
+            position: relative;
+            top: 170px;
+        }
+
+        .logo {
+            position: relative;
+            right: 250px;
+            top: 20px;
+        }
+
+        .pink_text {
+            color: pink;
+        }
+
+        .login {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 26px;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline;
+            position:relative;
+            top:200px;
+            left:40%;
+        }
+
+        .split {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            
+        
+        }
+        .two{
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.854);
+            
+        }
+        .log-in{
+              border-radius: 10px;
+            padding: 10px;
+            background-color:rgba(86, 67, 233, 0.371);
+            width:500px;
+            height: 50px;
+            color:white;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 300px;
+            top:500px;
+          
+        }
+        p{
+            color: white;
+        }
+        .number{
+            border-radius: 10px;
+            padding: 10px;
+            background-color:rgba(0, 0, 0, 0.491);
+            width:700px;
+            height: 50px;
+            position:absolute;
+            top: 290px;
+            left: 60%;
+        }
+        .forget{
+            position: relative; 
+            top: 500px;
+            font-size: 20px;
+            left: 50%;
+        }
+        .password{
+            border-radius: 10px;
+            padding: 10px;
+            background-color:rgba(0, 0, 0, 0.491);
+            width:700px;
+            height: 50px;
+            position:absolute;
+            top: 400px;
+            left: 60%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="split">
+        <div class="one">
+            <img src="./insta_logo.png" alt="instagram" width="100px" height="100px" class="logo">
+            <p class="spelling">See everyday moments from your <span class="pink_text">,close friends.</span></p>
+            <img src="./friend.webp" alt="instagram" width="500px" height="500px" class="friend">
+        </div>
+        <div class="two">
+           <span class="login">Log into Instagram</span>
+           <div ><input type="email,number,username" class="number" placeholder="Mobile number,username or email"><br>
+              <input type="password" class="password" placeholder="Password"><br>
+            </div>
+            <div class="log-in">login</div>
+            <p class="forget">forget password ?</p>
+        </div>
+    </div>
+</body>
+
+</html>

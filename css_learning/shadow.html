@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: skyblue;
+        }
+        .text{
+            text-shadow: 1px 1px .5rem blue;
+        }
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        box-shadow: 10px 10px 5px grey;
+        position: inherit;
+        z-index: 9;
+    }
+    .min{
+        filter : drop-shadow(10px 10px 5px grey);
+    }
+    img{
+        position: relative;
+        left:40px;
+        top:80px;
+        z-index: 4;
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+       <p class="text" style="background-color: red;">hello world</p>
+    </div>
+       <img class="min" src="attack.jpg" alt="Image">
+    
+</body>
+</html>
