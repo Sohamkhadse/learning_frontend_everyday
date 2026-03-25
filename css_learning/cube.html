@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sunday.com</title>
+    <style>
+        body{
+            margin:10rem;
+            width:800px;
+            height: 800px;
+            perspective: 800px;;
+        }
+        .cube {
+            height: 800px;
+            width: 800px;
+            /* border:2px solid red; */
+            margin: auto;
+            /* perspective: 800px; */
+            transform-style: preserve-3d;
+            position: relative;
+            animation: spining 5s linear infinite;
+
+
+        }
+        @keyframes spining {
+            0%{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                 transform: rotateX(360deg) rotateY(360deg);
+            }
+
+        }
+
+        .face {
+            height: 400px;
+            width: 400px;
+            border: 2px solid red;
+            margin: auto;
+            background:rgba(255,0,0,0.5);
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            color: rgba(0,0,255, 0.5);
+            top: 25%;
+            right: 40%;
+            display: flex;
+
+        }
+
+        .face1 {
+            transform: rotateY(0deg) translateZ(200px);
+        }
+
+        .face2 {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+
+        .face3 {
+            transform: rotateY(180deg) translateZ(200px);
+        }
+
+        .face4 {
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+
+        .face5 {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+
+        .face6 {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube">
+        <div class="face face1">1</div>
+        <div class="face face2">2</div>
+        <div class="face face3">3</div>
+        <div class="face face4">4</div>
+        <div class="face face5">5</div>
+        <div class="face face6">6</div>
+    </div>
+</body>
+
+</html>
