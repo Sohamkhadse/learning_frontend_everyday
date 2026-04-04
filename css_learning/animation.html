@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nobody.com</title>
+    <style>
+        *{
+            background-color: skyblue;
+        }
+        
+        .x1{
+            height:800px;
+            width:800px;
+        }
+
+        .y{
+            height:100px;
+            width:100px;
+            background:orange;
+            margin:2px solid red;
+            position:relative;
+            border:10px solid skyblue;
+            animation-name: move;
+            /* animation shorthand property */
+            animation:move 2s linear 1s infinite alternate forwards;
+        }
+        
+        .y2{
+            animation-timing-function: steps(5);
+        }
+        .y3{
+            animation-timing-function: ease-in-out;
+        }
+        .y4{
+            animation-timing-function: ease-out;
+        }
+        .y5{
+            animation-timing-function: ease-in;
+        }
+        
+        @keyframes move {
+            0%{
+                background-color: green ;
+            }
+            50%{
+                background-color: blue;
+                width:100%;
+            }
+            100%{
+                width:20px;
+            }
+            
+        }
+    
+        .end{
+            height: 50px;
+            width:90px;
+            background-color: red;
+            animation-name: end;
+            animation:end 2s steps(8) 1s infinite alternate forwards;
+        }
+        @keyframes end{
+            0%{
+                position: absolute;
+                left:100%;
+            }
+            50%{    
+                position: absolute;
+                left:50px;
+            }
+            100%{
+                position: relative;
+                right:100%;
+
+            }
+        }
+
+        .y5:hover{
+            background-color: red;
+        }
+
+
+    </style>
+    </head>
+<body>
+    <div class="x1">
+        <div class="y y1">1</div>
+        <div class="y y2">2</div>
+        <div class="y y3">3</div>
+        <div class="y y4">4</div>
+        <div class="y y5">5</div>
+        <!-- <div class="y y1">1</div> -->
+        <div class="end">end</div>
+    </div>
+</body>
+</html>

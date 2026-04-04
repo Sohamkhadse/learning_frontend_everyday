@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x1{
+            height:400px;
+            width:400px;
+            background-color: chartreuse;
+            content:"";
+        }
+        .x1::after{
+            content:"no";
+            height:200px;
+            width:200px;
+           background-color:blue;
+           display: block;
+        }
+        .x1::before{
+            content:"do you love me ? yes,";
+            height:200px;
+            width:200px;
+           background-color:rgb(231, 130, 16);
+            display: block;
+        }
+        .x1:hover::after{
+            position:relative;
+            /* bottom:100px; */
+            background-color: rgb(16, 244, 244);
+            position:absolute;
+            right: 435px;
+        }
+          .x1:hover::after{
+            position:relative;
+            /* bottom:100px; */
+            background-color: rgb(16, 244, 244);
+            position:absolute;
+            right: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="x1"></div>
+</body>
+</html>
