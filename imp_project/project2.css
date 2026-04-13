@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width:98%;
+    font-size: 1.2rem;
+    top:0rem;
+    background-color: white;
+}
+
+.x1{
+    display:flex;
+    gap:6rem;
+    font-size: 1.2rem;
+}
+.x2{
+    display:flex;
+    gap:7rem;
+}
+.x1:hover{
+    border-radius: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: grey;
+    cursor: pointer;
+}
+/* .x2:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: grey;
+    cursor: pointer;
+} */
+
+.a1:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.a2:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.a3:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.x2{
+    font-size: 2rem;
+    font-weight: 20rem;
+}
+
+.building{
+    /* let the building container size naturally and keep a top gap under the fixed header */
+    margin-top: 6rem;
+    width: 100%;
+    /* max-width: 11000px; optional: limit how wide the image can grow */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.building img{
+    display: block;       /* remove inline spacing and make width control predictable */
+    max-width: 100%;      /* scale responsively inside .building */
+    height: auto;         /* preserve aspect ratio */
+    width:520rem;
+}
+
+main{
+    /* keep main content in document flow and stack elements vertically */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+}
+.middle{
+    font-size: 2rem;
+    font-weight: 20rem;
+    margin:70px;
+}
+
+.houses{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding:20px
+}
+
+/* each grid cell is a positioned container so overlays can sit on the image */
+.house-item{
+    position: relative;
+    overflow: hidden;
+}
+
+.house-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.house-item .overlay{
+    position: absolute;
+    right:55%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-weight: 700;
+    pointer-events: none; /* overlay won't block clicks on the image */
+    opacity: 1;
+    transition: background .2s ease, transform .2s ease;
+    position: top-right;
+}
+
+/* optional hover effect: slightly lift overlay */
+.house-item:hover .overlay{
+    background: rgba(0,0,0,0.75);
+    transform: translate(-50%, -55%);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    margin:5rem;
+    font-size: large;
+}
+
+.people{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:1rem;
+    padding:20px;
+    margin: .5rem;
+
+}
+
+.contact-button{
+    background-color: grey;
+    color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    /* border-radius: 34px; */
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start; /* align button to the left */
+    width:100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    margin:.5rem;
+    font-size: 2rem;
+}
+
+.contact-input{
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 2rem;
+    gap: 5rem;
+}
+
+.contact-textarea{
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 5rem;
+}
+
+.nope{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    margin:.1rem;
+    font-size: 2rem;
+}
+.submit-button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    /* border-radius: 34px; */
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start; /* align button to the left */
+}
+.map{
+    width:100%;
+    height:auto;
+}
+
+.end{
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: black;
+}
+
+
+
