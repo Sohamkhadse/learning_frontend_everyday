@@ -1,0 +1,90 @@
+## What is JavaScript?
+JavaScript is a high-level, interpreted programming language (modern engines use JIT compilation for faster execution). It is single-threaded but uses an **event loop** to handle multiple operations efficiently. It is also **dynamically typed** (data types are determined at runtime) and **loosely typed** (automatic type conversion happens).
+
+
+
+## Where is JavaScript Used?
+- Web scripting (frontend)
+- Server-side (REST APIs via Node.js)
+- Mobile apps (React Native)
+- Desktop apps (Electron)
+- Game development
+- Browser extensions
+- Real-time applications (chat apps, live updates)
+
+
+
+## How to Run JavaScript
+1. **Browser** – runs client-side inside any web browser
+2. **Node.js** – runs server-side as a runtime environment
+
+
+
+## Key Characteristics
+- **Event-driven** – responds to user actions (click, input, hover)
+- **Asynchronous programming** support via Callbacks, Promises, and Async/Await
+- **Prototype-based inheritance** (not classical class-based inheritance)
+- **First-class functions** – functions can be passed as arguments, returned from other functions, and assigned to variables
+
+
+
+## How JavaScript Executes Code
+| Component | Role |
+|-----------|------|
+| **Call Stack** | Executes functions one at a time (single-threaded) |
+| **Web APIs** | Handles async tasks like `setTimeout`, `fetch`, DOM events |
+| **Callback Queue** | Holds completed async callbacks waiting to run |
+| **Event Loop** | Continuously checks if the call stack is empty, then pushes queued callbacks |
+
+This is why JavaScript can handle async operations despite being single-threaded.
+
+---
+
+## Functions
+- **Normal functions** – standard declaration
+- **Arrow functions** – concise syntax using `=>`
+- **Anonymous functions** – functions without a name
+- **Higher-order functions** – take or return other functions
+
+---
+
+## Important Concepts
+| Concept | Description |
+|--------|-------------|
+| **DOM** | Interface to interact with HTML elements |
+| **Event Handling** | `onclick`, `addEventListener()` |
+| **Closures** | A function that remembers its outer scope |
+| **Hoisting** | Variables/functions moved to top before execution |
+| **Scope** | Global, local, and block scope |
+| **`this` keyword** | Refers to the current object context |
+
+---
+
+## Memory Management
+- JavaScript uses **automatic garbage collection**
+- The **Mark-and-Sweep** algorithm removes objects no longer reachable in memory
+- **Memory leaks** can still occur from global variables, forgotten event listeners, or closures holding references unnecessarily
+
+---
+
+## ES6+ Modern Features
+`Arrow functions` · `Template literals` · `Destructuring` · `Spread & Rest operators` · `Classes` · `Modules (import/export)`
+
+---
+
+## Popular Libraries & Frameworks
+| Tool | Use |
+|------|-----|
+| React | UI / Frontend development |
+| Express.js | Backend / REST APIs |
+| React Native | Mobile apps |
+
+
+
+- **JSON (JavaScript Object Notation)** – A lightweight format used to exchange data between client and server. JS uses `JSON.stringify()` to convert objects to JSON and `JSON.parse()` to convert JSON back to objects.
+
+- **Error Handling** – `try...catch` is used to handle runtime errors gracefully. Code that might throw an error goes inside `try`, and if an error occurs, `catch` handles it without crashing the program. `finally` runs regardless of the result.
+
+- **JS Engines** – JavaScript engines like **V8** (used in Chrome and Node.js) parse and execute JS code. Modern engines use **JIT (Just-In-Time) compilation** to convert JS into machine code at runtime for faster performance.
+
+- **API Calls** – The built-in `fetch()` method is used to make HTTP requests to external APIs or servers. It returns a **Promise**, so it's typically used with `.then()` or `async/await` to handle the response.
