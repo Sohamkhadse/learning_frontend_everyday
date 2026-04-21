@@ -1,0 +1,42 @@
+javascript follows both
+OOP(object oriented programming)
+POP(process oriemted programming)
+
+
+                               <--variables-->
+
+they are basically empty boxes we can store any value or data in it and we dont even have to declare the datatype.
+
+data type.
+1. Primitive Data Types
+These are basic data types and store single values.
+Types of Primitive Data:
+Number → integers and decimals
+Example: 10, 3.14
+String → text (written in quotes)
+Example: "hello"
+Boolean → true or false
+Example: true, false.
+
+2.Non-Primitive Data Types (Reference Types)
+These are complex data types and can store multiple values.
+Types of Non-Primitive Data:
+Object → collection of key-value pairs.
+(ex--array,object,functoin)
+
+                                     <--doing things-->
+scope name = value or data.
+
+variable are:
+var--(public) [can be accessible ]
+let--(protected)
+const--(protected and immutable)[cannot be update in future]
+
+
+                                  <----how to declare it ? --->
+
+let mango = 15;
+let name = "soham"(string in double coate)
+let score = true; -->bollean
+
+

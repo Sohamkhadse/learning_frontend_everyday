@@ -1,90 +1,37 @@
-## What is JavaScript?
-JavaScript is a high-level, interpreted programming language (modern engines use JIT compilation for faster execution). It is single-threaded but uses an **event loop** to handle multiple operations efficiently. It is also **dynamically typed** (data types are determined at runtime) and **loosely typed** (automatic type conversion happens).
+JavaScript is a high-level programming language.It is used for developing interactive web applications.
+it is interpreted and dynamically typed language. means we  do not have to declare variable datatype rather the engine understands
+the data type automatically.
+
+javascript was created by brenden eich in 1995 and the major changes was introduces
+in 2015 version.
+
+javascript is scripting language means it is interpreted(run line by line)
+it is used to write small programs that make things run automativally.
+
+it was originally used to add interactivity to web pages using small script but today it is a fully imp language.
 
 
 
-## Where is JavaScript Used?
-- Web scripting (frontend)
-- Server-side (REST APIs via Node.js)
-- Mobile apps (React Native)
-- Desktop apps (Electron)
-- Game development
-- Browser extensions
-- Real-time applications (chat apps, live updates)
+Javascript is used in web scripting, server-side development (REST APIs), mobile applications (using React Native), 
+and desktop applications.
+
+We can run Javascript in 2 ways:
+
+1.using a client web browser (client-side)
+2.using Node.js (server-side)
+
+there are various framework and libraries that are use in javascriptto create mobile apps and servers.
+(react,express,react native)
+Javascript is an event-driven language, it works on user actions like click, hover, input, etc
 
 
+< node .js>
+Node.js is a runtime environment that allows you to run JavaScript outside the browser.
+Normally, JavaScript runs only in browsers, but Node.js lets you run it on the server (backend)
 
-## How to Run JavaScript
-1. **Browser** – runs client-side inside any web browser
-2. **Node.js** – runs server-side as a runtime environment
-
-
-
-## Key Characteristics
-- **Event-driven** – responds to user actions (click, input, hover)
-- **Asynchronous programming** support via Callbacks, Promises, and Async/Await
-- **Prototype-based inheritance** (not classical class-based inheritance)
-- **First-class functions** – functions can be passed as arguments, returned from other functions, and assigned to variables
+It is built on Google Chrome V8 engine, which makes it fast.
+Node.js is important because it makes JavaScript a complete full-stack language,
+ allowing developers to build both frontend and backend using the same language.
 
 
-
-## How JavaScript Executes Code
-| Component | Role |
-|-----------|------|
-| **Call Stack** | Executes functions one at a time (single-threaded) |
-| **Web APIs** | Handles async tasks like `setTimeout`, `fetch`, DOM events |
-| **Callback Queue** | Holds completed async callbacks waiting to run |
-| **Event Loop** | Continuously checks if the call stack is empty, then pushes queued callbacks |
-
-This is why JavaScript can handle async operations despite being single-threaded.
-
----
-
-## Functions
-- **Normal functions** – standard declaration
-- **Arrow functions** – concise syntax using `=>`
-- **Anonymous functions** – functions without a name
-- **Higher-order functions** – take or return other functions
-
----
-
-## Important Concepts
-| Concept | Description |
-|--------|-------------|
-| **DOM** | Interface to interact with HTML elements |
-| **Event Handling** | `onclick`, `addEventListener()` |
-| **Closures** | A function that remembers its outer scope |
-| **Hoisting** | Variables/functions moved to top before execution |
-| **Scope** | Global, local, and block scope |
-| **`this` keyword** | Refers to the current object context |
-
----
-
-## Memory Management
-- JavaScript uses **automatic garbage collection**
-- The **Mark-and-Sweep** algorithm removes objects no longer reachable in memory
-- **Memory leaks** can still occur from global variables, forgotten event listeners, or closures holding references unnecessarily
-
----
-
-## ES6+ Modern Features
-`Arrow functions` · `Template literals` · `Destructuring` · `Spread & Rest operators` · `Classes` · `Modules (import/export)`
-
----
-
-## Popular Libraries & Frameworks
-| Tool | Use |
-|------|-----|
-| React | UI / Frontend development |
-| Express.js | Backend / REST APIs |
-| React Native | Mobile apps |
-
-
-
-- **JSON (JavaScript Object Notation)** – A lightweight format used to exchange data between client and server. JS uses `JSON.stringify()` to convert objects to JSON and `JSON.parse()` to convert JSON back to objects.
-
-- **Error Handling** – `try...catch` is used to handle runtime errors gracefully. Code that might throw an error goes inside `try`, and if an error occurs, `catch` handles it without crashing the program. `finally` runs regardless of the result.
-
-- **JS Engines** – JavaScript engines like **V8** (used in Chrome and Node.js) parse and execute JS code. Modern engines use **JIT (Just-In-Time) compilation** to convert JS into machine code at runtime for faster performance.
-
-- **API Calls** – The built-in `fetch()` method is used to make HTTP requests to external APIs or servers. It returns a **Promise**, so it's typically used with `.then()` or `async/await` to handle the response.
+ 
