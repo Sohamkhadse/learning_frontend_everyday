@@ -40,3 +40,63 @@ let name = "soham"(string in double coate)
 let score = true; -->bollean
 
 
+
+                                  <----operator---->
+ there are various operators use to perform operation in coading
+
+ 1. Arithmetic Operators
+Used for mathematical calculations.
++ → Addition
+- → Subtraction
+* → Multiplication
+/ → Division
+% → Modulus (remainder)
+** → Exponentiation (power)
+
+2. Assignment Operators
+Used to assign values to variables.
+= → Assign
++= → Add and assign
+-= → Subtract and assign
+*= → Multiply and assign
+/= → Divide and assign
+
+3. Comparison Operators
+Used to compare two values (returns true/false).
+== → Equal (only value)
+=== → Strict equal (value + type)
+!= → Not equal
+!== → Strict not equal
+> < >= <=
+
+4. Logical Operators
+Used to combine conditions.
+&& → AND (both true)
+|| → OR (any one true)
+! → NOT (reverse result)
+
+5. Increment & Decrement
+++ → Increment
+-- → Decrement
+Types:
+Pre → first increase/decrease, then use
+Post → first use, then increase/decrease
+
+6. Ternary Operator
+condition ? value1 : value2
+Short form of if-else.
+
+7. Member Access Operators
+Used to access properties or methods of objects.
+. → Dot notation
+[] → Bracket notation
+
+
+                                      <--statements-->
+input/output statements
+
+Javascript it has built in input and output methods
+
+output : console.log, window.alert, document.write, etc.. 
+input : window.prompt
+
