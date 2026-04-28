@@ -100,3 +100,16 @@ Javascript it has built in input and output methods
 output : console.log, window.alert, document.write, etc.. 
 input : window.prompt
 
+                                      <---pre and post inc & decrement operator---->
+
+pre Increment operator is (++data) [it increment the number first then write it]
+pre decrement operator is (--data) [it decrement the number first then write it]
+
+post increment operator is (data++) [it write the number first then increment it]
+post decremtnt operator is (data--) [it write the number first then decrement it]
+
+
+                                    <-- type casting--->
+to convert the data type from one form to another
+ex->from string to bollean.
+(we also have a function for it )  syntax--> data = number(data)
