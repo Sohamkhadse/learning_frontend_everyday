@@ -1,14 +1,13 @@
  /* let age = 77
  age > 18 ? console.log("you are a man"):console.log("you are a child") */
 
- let a = 100
-let b = 25
-let c = 18
-let d = 30
+let a = 100;
+let b = 25;
+let c = 18;
+let d = 30;
 
-let greatest = 
+console.log(
     (a > b && a > c && a > d) ? a :
     (b > c && b > d) ? b :
-    (c > d) ? c : d;
-
-console.log("Greatest number is:", greatest);
+    (c > d) ? c : d
+);
