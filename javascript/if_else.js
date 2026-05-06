@@ -114,19 +114,33 @@
 //     }
 // }
 
-let marks = 72
-let attendance = 80
+// let marks = 72
+// let attendance = 80
 
-if (marks >= 50) {
-    if (attendance >= 75) {
-        console.log("Pass")
+// if (marks >= 50) {
+//     if (attendance >= 75) {
+//         console.log("Pass")
+//     } else {
+//         console.log("Fail due to low attendance")
+//     }
+// } else {
+//     if (attendance >= 75) {
+//         console.log("Fail due to low marks")
+//     } else {
+//         console.log("Fail in both")
+//     }
+// }
+
+let year = 2028
+
+if (year % 100 == 0) {
+    if (year % 400 == 0) {
+        console.log(year + " is leap year !")
     } else {
-        console.log("Fail due to low attendance")
+        console.log(year + " is not a leap year !")
     }
+} else if (year % 4 == 0) {
+    console.log(year + " is leap year !")
 } else {
-    if (attendance >= 75) {
-        console.log("Fail due to low marks")
-    } else {
-        console.log("Fail in both")
-    }
+    console.log(year + " is not a leap year !")
 }

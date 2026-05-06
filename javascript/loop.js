@@ -40,3 +40,98 @@
 // }
 // console.log(sum);
 
+// <----------------------sum of total number---------------------------------------------------------------->
+// let d;
+// let sum = 0;
+// let num = 1234;
+
+// while(num != 0){
+//     d = num % 10;
+//     sum = sum + d;
+//     num = parseInt(num/10);
+// }
+// console.log(sum)
+
+// let d;
+// let sum = 0;
+// let num = 1234;
+// do{
+//     d = num % 10;
+//     sum = sum + d;
+//     num = parseInt(num/10);
+// }while(num != 0)
+//     console.log(sum)
+
+// let d;
+// let sum = 0;
+// // let num = 1234;
+// for(let num = 1234; num != 0 ;num = parseInt(num/10)){
+//     d = num % 10;
+//     sum = sum + d;
+// }
+// console.log(sum);
+
+// <-----------------------to find armstrong number---------------------------->
+// let d;
+// let sum = 0;
+// let num = 1234;
+
+// while(num != 0){
+//     d = num % 10;
+//     sum = sum + (d*d*d);
+//     num = parseInt(num/10);
+// }
+// console.log(sum)
+
+// let d;
+// let sum = 0;
+// let num = 1234;
+// do{
+//     d = num % 10;
+//     sum = sum + (d*d*d);
+//     num = parseInt(num/10);
+// }while(num != 0)
+//     console.log(sum)
+
+// let d;
+// let sum = 0;
+// // let num = 1234;
+// for(let num = 1234; num != 0 ;num = parseInt(num/10)){
+//     d = num % 10;
+//     sum = sum + (d*d*d);
+// }
+// console.log(sum);
+
+// <----------------to reverse the number------------------------------------------------>
+// let d;
+// let num = 1234;
+// let rev = 0;
+
+// while (num != 0) {
+//     d = num % 10;
+//     rev = rev * 10 + d;
+//     num = parseInt(num / 10);
+// }
+
+// console.log(rev);
+
+
+// let d;
+// let num = 1234;
+// let rev = 0;
+// do{
+//   d = num % 10;
+//     rev = rev * 10 + d;
+//     num = parseInt(num / 10);
+// }while(num != 0)
+//     console.log(rev)
+
+// let d;
+// let num = 1234;
+// let rev = 0;
+// for(let num = 1234; num != 0 ;num = parseInt(num/10)){
+//   d = num % 10;
+//     rev = rev * 10 + d;
+// }
+// console.log(rev);
+
