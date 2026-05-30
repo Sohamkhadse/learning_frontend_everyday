@@ -31,28 +31,52 @@
 // <--------------------------------------------------------------->
 // selection sort 
 
-let numbers = [3, 2,1]
-let step = 0
+// let numbers = [3, 2,1]
+// let step = 0
 
-for (let i = 0; i < numbers.length - 1; i++) {
-    minIndex = i
-    step++;
-    // swaping 
-    for (let j = i + 1; j < numbers.length; j++) {
-        if (numbers[j] < numbers[minIndex]) {
-            minIndex = j
-        }
+// for (let i = 0; i < numbers.length - 1; i++) {
+//     minIndex = i
+//     step++;
+//     // swaping 
+//     for (let j = i + 1; j < numbers.length; j++) {
+//         if (numbers[j] < numbers[minIndex]) {
+//             minIndex = j
+//         }
+//     }
+//     // swap
+//     let temp = numbers[minIndex]
+//     numbers[minIndex] = numbers[i]
+//     numbers[i] = temp
+// }
+
+// console.log("sorted array : ")
+// console.log(numbers)
+
+// numbers.sort((a, b) => b - a)
+
+// console.log(numbers)
+// console.log("total steps : " + step)
+
+// <-------------sortiing function---------------->
+
+// let numbers = [3, 5, 2, 1, 4, 5, 0, -1, -1]
+
+// // console.log(numbers.sort())
+
+// numbers.sort((a,b)=> a - b)
+
+// console.log(numbers)
+
+let names = ["John", "Alice", "Bob", "Charlie"]
+
+// names.sort()
+
+// console.log(names)
+
+names.sort((a,b)=>{
+    if(a > b) {
+        return -1
     }
-    // swap
-    let temp = numbers[minIndex]
-    numbers[minIndex] = numbers[i]
-    numbers[i] = temp
-}
-
-console.log("sorted array : ")
-console.log(numbers)
-
-numbers.sort((a, b) => b - a)
-
-console.log(numbers)
-console.log("total steps : " + step)
+    return 0
+})
+console.log(names)
