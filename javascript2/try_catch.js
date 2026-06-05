@@ -12,7 +12,7 @@ console.log("error")
     console.log("code is completed")
 }
 
-//it is error handling cause it gives us proper error
+//it is error handling cause it gives us proper error6
 try{
     console.log(a)
 }catch(err){
