@@ -42,7 +42,7 @@ h1 {
     border:5px solid yellow;
     border-radius: 20px;
 }
-.submit{
+#submit{
     position: relative;
     height:70px;
     width:20%;
