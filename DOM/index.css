@@ -1,5 +1,5 @@
 * {
-    background-color: brown;
+    /* background-color: brown; */
     margin: 0;
     padding: 0;
 }
@@ -53,4 +53,8 @@ h1 {
     background-color: rgb(18, 211, 79);
     border:5px solid rgb(0, 26, 255);
     border-radius: 20px;
+}
+
+th, td{
+    border:1px solid black;
 }
