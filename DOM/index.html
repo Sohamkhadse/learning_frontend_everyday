@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <style>
+        .first {
+            background-color: rgb(208, 208, 29);
+        }
+
+        .second {
+            text-shadow: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,22 +22,34 @@
     <head>
         <h1 class=heading>This is a login page</h1>
     </head>
-    <main class="login_form">
+    <main id="login_form">
+            <div id="target1">
+        This is the element
+    </div>
+
+    <input type="text" name="name" id="input1" placeholder="some name" required min="" max="">
+    <input type="text" name="name" id="input2" placeholder="some phone" required min="" max="">
+    <input type="text" name="name" id="input3" placeholder="some address" required min="" max="">
+
+    
         <input type="text" id="username" placeholder="Enter the name">
         <input type="text" id="password" placeholder="Enter the password">
 
-        <table id="table1"><tr>
+        <table id="table1">
+            <tr>
 
-            <th>name</th>
-            <th>phone</th>
-            <th>address</th>
-        </tr><tr>
-            <td id="element1">krish</td>
-            <td id="element1">98729798</td>
-            <td id="element1">pune</td>
-        </tr><tr>
-            <td id="element2"></td>
-        </tr>
+                <th>name</th>
+                <th>phone</th>
+                <th>address</th>
+            </tr>
+            <tr>
+                <td id="element1">krish</td>
+                <td id="element1">98729798</td>
+                <td id="element1">pune</td>
+            </tr>
+            <tr>
+                <td id="element2"></td>
+            </tr>
 
         </table>
     </main>
@@ -36,9 +57,9 @@
         <button type="submit" id="submit">
             <h1>Click me</h1>
         </button>
-        <!-- </script> -->
+        </script>
     </footer>
-    <script src="DOM2.js"></script>
+    <script src="DOM3.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-h1 {
+h1{
     position: absolute;
     left: 45%;
     right: 50%;
@@ -15,7 +15,7 @@ h1 {
     top:20px;
 }
 
-.login_form{
+#login_form{
     position: relative;
     height:700px;
     width:700px;
@@ -24,7 +24,7 @@ h1 {
     left:34%;
     /* background-color:rgba(220,220,220,.5); */
 }
-.login_form{
+#login_form{
     display:flex;
     gap:100px;
 }
