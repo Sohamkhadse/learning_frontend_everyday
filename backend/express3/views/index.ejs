@@ -6,16 +6,28 @@
         <button type="submit">Submit</button>
     </form>
 
-    <h1>myself <%= name %>   <h1>
+    <table border="1">
+        <tr>
+        <th>Name</th>
+        <th>age</th>
+        <th>action</th>
+        </tr>
+
+        <% inputData.forEach((item)=>{ %>
+            <tr>
+                <td><%= item.name %></td>
+                <td><%= item.age %></td>
+
+                <td>
+                    <button>edit</button>
+                    <button id="deletebtn">Delete</button>
+                </td>
+
+            </tr>
+       <% }) %>
 
 
-        <% if (age<18){ %>
-            <h1> i am smaller cause my age is <%= age %></h1>
-        <% } %>
-
-        <%  inputData.forEach((item)=>{ %>
-            <h1>the data is , name <%= item.name %>, age is <%= item.age %>.</h1>
-      <%  }) %>
+    </table>
 
 
-    <%- include("./head-foot/footer.ejs")   %>
+    <%- include("./head-foot/footer.ejs") %>
