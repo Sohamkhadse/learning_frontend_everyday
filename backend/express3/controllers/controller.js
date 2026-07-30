@@ -12,14 +12,26 @@ const handelPostWelcome = (req, res) => {
     res.status(300).redirect("/api/")
 }
 
-const handleDelete = (req, res)=>{
-    let{id} = req.params
+const handleDelete = (req, res) => {
+    try {
 
-    data.filter((items, index)=>{
-        return id != index
-    })
-    res.status(300).redirect("/api")
-}
+        const { id } = req.params;
+
+        data = data.filter((item, index) => index !== Number(id));
+
+        res.status(200).json({
+            message: "Deleted successfully"
+        });
+
+    } catch (error) {
+
+        res.status(500).json({
+            message: "Something went wrong",
+            error: error.message
+        });
+
+    }
+};
     
 const handleUpdate = (req, res) => {
 

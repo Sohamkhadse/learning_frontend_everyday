@@ -12,19 +12,19 @@
         <th>age</th>
         <th>action</th>
         </tr>
+<% inputData.forEach((item, index) => { %>
+    <tr>
+        <td><%= item.name %></td>
+        <td><%= item.age %></td>
 
-        <% inputData.forEach((item)=>{ %>
-            <tr>
-                <td><%= item.name %></td>
-                <td><%= item.age %></td>
-
-                <td>
-                    <button>edit</button>
-                    <button id="deletebtn">Delete</button>
-                </td>
-
-            </tr>
-       <% }) %>
+        <td>
+            <button>Edit</button>
+            <button class="deletebtn" data-id="<%= index %>">
+                Delete
+            </button>
+        </td>
+    </tr>
+<% }) %>
 
 
     </table>
