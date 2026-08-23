@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import dotenev from "dotenv";
+import dotenv from "dotenv";
 
-dotenev.config();
+dotenv.config();
 async function connectDB() {
   try {
     await mongoose.connect(process.env.MONGODB_CONNECTION_STRING)

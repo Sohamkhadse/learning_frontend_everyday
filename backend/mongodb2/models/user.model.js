@@ -54,16 +54,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-
-    loginAttempts: {
-    type: Number,
-    default: 0
-},
-
-lockUntil: {
-    type: Date,
-    default: null
-},
     gender: {
         type: String,
         required: true,
@@ -76,7 +66,6 @@ lockUntil: {
 }, { timestamps: true })
 
 userSchema.pre("save", async function () {
-    if (!this.isModified("password")) return;
     let hashedPassword = await bcrypt.hash(this.password, 12)
     this.password = hashedPassword
 })
