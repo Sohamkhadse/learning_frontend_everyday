@@ -1,29 +1,28 @@
 import React from 'react'
 
-import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-
 import "./styles/style.css"
 
+import Header from './components/Header'
+import Card from './components/Card'
+import Footer from './components/Footer'
+import Position from './components/Position'
+
 const App = () => {
-
-  // let number = 123
-
-  // let style1 = { color: "red", backgroundColor: "black" }
-  // let style2 = { color: "blue", backgroundColor: "black" }
-  // let style3 = { color: "yellow", backgroundColor: "black" }
 
   return (
     <div>
 
-      {/*
-        <h1 style={style1}>hello world {number + 100}</h1>
-        <h1 style={style2}>hello world</h1>
-        <h1 style={style3}>hello world</h1>
-        <h1 style={style1}>hello world</h1>
-      */}
+      <Header />
 
-      <h1 className="first">hello world</h1>
+      <h1 className="text-4xl text-red-500">
+        hello bro this is new world
+      </h1>
+
+      <Card />
+
+      <Footer />
+
+      <Position />
 
     </div>
   )
