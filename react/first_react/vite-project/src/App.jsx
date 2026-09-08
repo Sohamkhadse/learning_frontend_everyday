@@ -5,7 +5,8 @@ import "./styles/style.css"
 import Header from './components/Header'
 import Card from './components/Card'
 import Footer from './components/Footer'
-import Position from './components/Position'
+import Position from './components/position'
+import Button from './components/Button'
 
 const App = () => {
 
@@ -20,9 +21,10 @@ const App = () => {
 
       <Card />
 
-      <Footer />
-
       <Position />
+
+      <Footer />
+      <Button/>
 
     </div>
   )
