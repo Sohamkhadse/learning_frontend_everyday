@@ -7,6 +7,7 @@ import Card from './components/Card'
 import Footer from './components/Footer'
 import Position from './components/position'
 import Button from './components/Button'
+import Table from './components/table'
 
 const App = () => {
 
@@ -25,6 +26,8 @@ const App = () => {
 
       <Footer />
       <Button/>
+
+      <Table />
 
     </div>
   )
