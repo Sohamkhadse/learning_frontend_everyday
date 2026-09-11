@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Position from './components/position'
 import Button from './components/Button'
 import Table from './components/table'
+import Form from './components/form'
 
 const App = () => {
 
@@ -28,6 +29,8 @@ const App = () => {
       <Button/>
 
       <Table />
+
+      <Form/>
 
     </div>
   )
