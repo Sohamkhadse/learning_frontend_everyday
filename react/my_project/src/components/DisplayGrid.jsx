@@ -1,28 +1,30 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { StudentContext } from '../hooks/Wrapper.jsx'
 
-const DisplayGrid = (props) => {
+const DisplayGrid = () => {
+
+    let student = useContext(StudentContext)
+
     return (
         <div>
-            {props.studentData.map((student) => {
+
+            <h2>Student List</h2>
+
+            {student.studentData.map((student, index) => {
+
                 return (
-                    <div>
-                        name: {student.name}
-                        phone: {student.phone}
-                        note: {student.note}
-                        class: {student.class}
-                        roll: {student.roll}
+                    <div key={index}>
+
+                        <p>Name: {student.name}</p>
+
+                        <p>Age: {student.age}</p>
+
                     </div>
-
-                    
                 )
+
             })}
+
         </div>
-
-
-
-
-
-
     )
 }
 
