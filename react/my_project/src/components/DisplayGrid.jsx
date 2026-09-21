@@ -12,9 +12,17 @@ const DisplayGrid = (props) => {
                         class: {student.class}
                         roll: {student.roll}
                     </div>
+
+                    
                 )
             })}
         </div>
+
+
+
+
+
+
     )
 }
 

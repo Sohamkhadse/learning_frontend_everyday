@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import StudentForm from './components/StudentForm'
 import DisplayGrid from './components/DisplayGrid'
+import Cube from './components/Magic.jsx'
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
     <>
       <StudentForm addStudent={addToStudentData} />
       <DisplayGrid studentData={studentData}/>
+      <Cube />
     </>
   )
 }
