@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
+import { StudentContext } from '../hooks/Wrapper.jsx'
 
-const StudentForm = (props) => {
+const StudentForm = () => {
+
+    let student = useContext(StudentContext)
 
     let [studentFormData, setStudentFormData] = useState({
         name: "",
@@ -24,7 +28,8 @@ const handleSubmit = (e) => {
 
     try {
 
-        props.addStudent(studentFormData)
+        // props.addStudent(studentFormData)
+        student.addToStudentData(studentFormData)
 
         setStudentFormData({
             name: "",
@@ -39,8 +44,14 @@ const handleSubmit = (e) => {
     }
 }
 
-    return (
-        <div className='m-10 p-10 '>
+useEffect(() => {
+    alert(studentFormData.name + " is added to the list")
+}, 
+[student.studentData]
+)
+
+return (
+    <div className='m-10 p-10 '>
             <form onSubmit={handleSubmit} className='grid grid-cols-3 grid-row-3 gap-10 bg-red'>
                 <input onChange={handleChange} value={studentFormData.name} name='name' type="text" placeholder='name' className='bg-red-500' />
                 <input onChange={handleChange} value={studentFormData.roll} name='roll' type="text" placeholder='roll no' className='bg-yellow-200' />

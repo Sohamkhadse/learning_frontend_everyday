@@ -15,9 +15,11 @@ const DisplayGrid = () => {
                 return (
                     <div key={index}>
 
-                        <p>Name: {student.name}</p>
-
-                        <p>Age: {student.age}</p>
+                       <p>Name: {student.name}</p>
+                        <p>Roll: {student.roll}</p>
+                        <p>Class: {student.class}</p>
+                        <p>Note: {student.note}</p>
+                        <p>Phone: {student.phone}</p>
 
                     </div>
                 )
