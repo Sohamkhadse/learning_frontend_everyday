@@ -8,6 +8,38 @@ const App = () => {
   let [student, setStudent] = useState({});
   let [product, setProduct] = useState({});
 
+  let [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+  });
+
+    const handleChange = (e) => {
+    let { name, value } = e.target
+    setFormData((prev) => { return { ...prev, [name]: value } })
+  }
+
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      console.log(formData)
+
+      let result = await axios({
+        method: "POST",
+        url: "http://localhost:3011/data",
+        data: formData
+      })
+
+      console.log(result)
+      alert(result.data.message)
+
+    } catch (err) {
+      console.error("failed to send data : ", err)
+      alert("failed to send data !")
+    }
+  }
+
   useEffect(() => {
     fetchData();
     fetchUser();
@@ -80,18 +112,13 @@ const App = () => {
 
       <h1>Message: {message}</h1>
 
-      <h2>User</h2>
-      <p>Name: {user.name}</p>
-      <p>Age: {user.age}</p>
+       <form onSubmit={handleSubmit}>
+        <input onChange={handleChange} value={formData.name} type="text" name="name" id="" />
+        <input onChange={handleChange} value={formData.phone} type="tel" name="phone" id="" />
+        <input onChange={handleChange} value={formData.email} type="email" name="email" id="" />
+        <button type='submit'>submit</button>
+      </form>
 
-      <h2>Student</h2>
-      <p>Name: {student.name}</p>
-      <p>Roll: {student.roll}</p>
-      <p>Branch: {student.branch}</p>
-
-      <h2>Product</h2>
-      <p>Name: {product.product}</p>
-      <p>Price: {product.price}</p>
 
     </div>
   );

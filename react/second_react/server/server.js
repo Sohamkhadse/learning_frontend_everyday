@@ -13,6 +13,8 @@ let corsOptions = {
     origin:"*"
 }
 
+app.use(express.json())
+
 app.use(cors(corsOptions));
 
 app.get("/data",(req,res)=>{
@@ -47,6 +49,11 @@ app.get("/message", (req, res) => {
         message: "Response received"
     });
 });
+
+app.post("/data", (req, res) => {
+    console.log(req.body)
+    res.status(202).json({ message: "we got the data" })
+})
 
 app.listen(port,()=>{
     console.log(`Server is running on port ${port}`);
