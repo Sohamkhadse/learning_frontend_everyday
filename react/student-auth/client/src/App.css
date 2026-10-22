@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px #00000015;
+}
+
+h1 {
+  text-align: center;
+  color: #243b65;
+  font-size: 26px;
+}
+
+.form-box > p {
+  text-align: center;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+
+input:focus {
+  outline: 2px solid #8ba9e8;
+  border-color: #4269bb;
+}
+
+button {
+  padding: 12px;
+  background: #294e96;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d3970;
+}
+
+.rules {
+  background: #f3f6fb;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.rules p {
+  margin: 5px 0;
+}
+
+.message {
+  text-align: center;
+  overflow-wrap: anywhere;
+  color: #294e96;
+}
+
+.switch-button {
+  background: none;
+  color: #294e96;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.switch-button:hover {
+  background: #eef2f7;
+}
