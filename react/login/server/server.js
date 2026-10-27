@@ -24,6 +24,19 @@ app.post("/send-email", async (req, res) => {
     try {
         let { email } = req.body
 
+                if (!email) {
+            return res.status(400).json({
+                message: "Please enter an email address!"
+            });
+        }
+
+        // Check if email ends with @gmail.com
+        if (!email.endsWith("@gmail.com")) {
+            return res.status(400).json({
+                message: "Please enter a valid Gmail address ending with @gmail.com!"
+            });
+        }
+
         const emailAction = await transporter.sendMail({
             from: "Testing Nodemailer",
             to: email,
