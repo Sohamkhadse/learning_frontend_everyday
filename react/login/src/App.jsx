@@ -4,10 +4,10 @@ import mountainLakeImg from './assets/mountain-lake.jpg';
 export default function App() {
   const [mode, setMode] = useState('signup'); // 'signup' or 'login'
   const [formData, setFormData] = useState({
-    firstName: 'Michał',
-    lastName: 'Masiak',
-    email: 'michal.masiak@anywhere.co',
-    password: 'password123',
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
   });
   const [showPassword, setShowPassword] = useState(false);
   const [focusedField, setFocusedField] = useState('password');
